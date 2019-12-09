@@ -1,0 +1,34 @@
+<!--pages\detail\index.html-->
+<div class="detile">
+  <div class="top">
+    <div class="text">
+      <h4>{{obj.title}}</h4>
+      <p class="title">
+        <span style="width: 150px;display: inline-block;">作者：{{obj.writer}}&nbsp;&nbsp;</span><span
+          style="width: 150px;display: inline-block;">发布时间：{{obj.truetime | formatDate}}&nbsp;&nbsp;</span>
+      </p>
+      <!-- <p class="content" v-html="text"></p> -->
+      <se-rich-text :nodes="text" @click="tap" space="ensp"></se-rich-text>
+    </div>
+    <p class="befrom">来源：{{obj.befrom||obj.writer}}</p>
+    <p class="statement">
+      <span>【免责声明】</span>本文仅代表作者本人观点，与网站无关。本网站对文中陈述、观点判断保持中立，不对所包含内容的准确性、可靠性或完整性提供任何明示或暗示的保证。请读者仅作参考，并请自行承担全部责任。</p>
+  </div>
+  <div class="bottom">
+    <h3>推荐阅读</h3>
+    <ul>
+      <li v-for="(item,index) in list" :key="index" @click="detile(item.id)">
+        <div class="left">
+          <h3>{{item.title}}</h3>
+          <p>{{item.truetime| formatDate}}</p>
+        </div>
+        <div class="right">
+          <img :src="item.titlepic" alt="">
+        </div>
+      </li>
+    </ul>
+  </div>
+  <se-back-to-top :visibilityHeight="10" :bottom="100">
+    回到顶部
+  </se-back-to-top>
+</div>

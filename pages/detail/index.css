@@ -1,0 +1,136 @@
+/** pages\detail\index.css */
+/* 详情 */
+.detile {
+    /* padding: 20px 0px */
+  }
+
+  .detile .top {
+    padding: 0 10px
+  }
+
+  .detile h4 {
+    font-size: 20px
+  }
+
+  .detile .title {
+    font-size: 12px;
+    color: #aaa;
+    line-height: 20px;
+    margin: 20px 0
+  }
+
+  .detile .befrom {
+    font-size: 12px;
+    color: #aaa;
+    line-height: 20px;
+    margin: 20px 0
+  }
+
+  .detile .content {
+    font-size: 12px;
+    line-height: 30px
+  }
+
+  .detile .content img {
+    width: 100%;
+  }
+
+  .detile .content table {
+    width: 100% !important
+  }
+
+
+  .detile .statement {
+    font-size: 12px;
+    color: #999;
+    line-height: 25px;
+    background-color: rgb(245, 245, 245);
+    padding: 10px;
+    text-indent: 20px
+  }
+
+  .detile .statement span {
+    color: red
+  }
+
+  .bottom>h3 {
+    font-size: 20px;
+    line-height: 50px;
+    border-bottom: 1px solid #000;
+    padding: 0 10px
+  }
+
+  /* 推荐 */
+  .bottom ul{
+      padding-left: 0;
+  }
+  .bottom ul li {
+    width: 100%;
+    color: black;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    background-color: #fff;
+    box-sizing: border-box
+  }
+
+  .bottom ul li .left {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
+    max-width: 63%;
+  }
+
+  .bottom ul li .left h3 {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
+    min-height: 40px
+  }
+
+  .bottom ul li .left p {
+    font-size: 12px;
+    color: #aaa;
+    text-align: left;
+    margin: 0;
+  }
+
+  .bottom ul li .right {
+    float: right;
+  }
+
+  .bottom ul li .right img {
+    width: 125px;
+    height: 75px;
+    border-radius: 6px
+  }
+
+  .bottom ul {
+    overflow: hidden;
+  }
+
+  .swiper-slide {
+    position: relative
+  }
+
+  .swiper-slide>p {
+    padding: 0.3rem 0rem;
+    display: block;
+    width: 100%;
+    color: #FFF;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  img{
+      width: 100%;
+  }
+  h3{
+    margin: 0;
+  }

@@ -1,0 +1,11 @@
+body {
+  --default-color: #13cbda;
+  font-size: 14px;
+  color: #222;
+}
+* {
+  box-sizing: border-box;
+}
+.more__navigator:hover .se-breadcrumb--link {
+  color: var(--default-color);
+}
